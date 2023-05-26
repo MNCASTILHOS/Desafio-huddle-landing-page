@@ -1,0 +1,75 @@
+@media (max-width: 1060px){
+    .main {
+        grid-area: main;
+        display: flex;
+        padding: 0;
+        margin: 50px 50px 71px 50px;
+    }
+        
+}
+    
+@media (max-width: 768px){
+    .header{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .header img{
+        width: 100px;
+    }
+
+    .main{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .main .image img{
+        height: 200px;
+        width: 300px;
+    }
+
+    .main .informations{
+        margin: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main .informations .title{
+        margin-bottom: 10px;
+        font-size: 28px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main .informations .description{
+        margin-bottom: 5px;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main .informations .button{
+        margin-top: 18px;
+        margin-bottom: 30px;
+        height: 32px;
+    }
+
+    .footer .social{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 375px){
+
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat var(--background-color);
+    }
+}
+
+

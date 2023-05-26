@@ -1,0 +1,97 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/bg-desktop.svg) no-repeat var(--background-color);
+    display:grid;
+    grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    background-size: cover;
+    
+}
+
+.header{
+    grid-area: header;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.header img{
+    width: 140px;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    padding: 0 30px;
+    margin: 50px 90px 20px 90px;
+}
+
+.main .image img{
+    max-width: 100%;
+    width: 1440px;
+}
+  
+
+.informations{
+    margin-top: 30px;
+    margin-left: 80px;
+    color: #fff;
+}
+
+.informations .title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.informations .description {
+    font-weight: 400;
+}
+
+.informations .button{
+    width: 150px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: black 1px 1px 6px;
+}
+
+.informations .button:hover a{
+    color:#fff;
+    transition: 0.3s;
+}
+
+.informations .button:hover{
+    background-color: var(--color-button);
+    transition: 0.3s;
+}
+
+.informations .button a{
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: end;
+}
+
+.footer .social{
+    margin-right: 143px;
+    margin-bottom: 20px;
+}
+
+.footer a{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.footer a i:hover{
+    color: var(--color-button);
+    transition: 0.3s;
+}
